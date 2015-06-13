@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="aligned starter column">
+    <h1 class="ui header">MARKETPLACE</h1>
+  </div>
+</div>
+
+<!-- Renderiza Filtros Gerais -->
+<%= render "filters" %>
+
+<!-- Renderiza Filtros Sociais -->
+<%= render "social_filters" %>
+
+<div class="row grid-templates">
+  <!-- Renderiza Cards -->
+  <%= render @templates %>
+</div>

@@ -1,0 +1,27 @@
+<div class="ui card">
+  <div class="image">
+    <%#= template.image %>
+    <img src="assets/mario_loco.png">
+  </div>
+  <div class="content">
+    <a class="header"><%= template.name %></a>
+    <div class="meta">
+      <span class="date"><%= template.created_at %></span>
+    </div>
+    <div class="description">
+      <%= template.description %>
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="user icon"></i>
+      <%= template.value %>
+    </a>
+  </div>
+</div>
+
+
+<%#= link_to 'Show', template %>
+<%#= link_to 'Edit', edit_template_path(template) %>
+<%#= link_to 'Destroy', template, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%#= link_to 'New Template', new_template_path %>

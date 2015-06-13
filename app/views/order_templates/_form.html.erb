@@ -1,0 +1,25 @@
+<%= form_for(@order_template) do |f| %>
+  <% if @order_template.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order_template.errors.count, "error") %> prohibited this order_template from being saved:</h2>
+
+      <ul>
+      <% @order_template.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :template_id %><br>
+    <%= f.text_field :template_id %>
+  </div>
+  <div class="field">
+    <%= f.label :order_id %><br>
+    <%= f.text_field :order_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

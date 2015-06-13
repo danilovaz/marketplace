@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>Marketplace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="ui fixed menu inverted navbar">
+      <a href="#" class="brand item">Marketplace</a>
+      <%= link_to 'Home', root_path, {:class =>'active item'} %>
+      <!--<a href="registro.html" class="item">Registro</a>-->
+    </nav>
+
+    <div class="main container">
+      <div class="ui page grid">
+        <%= yield %>
+      </div>
+    </div>
+
+</body>
+</html>
